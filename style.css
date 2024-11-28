@@ -1,0 +1,213 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Reset and general styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa; /* Light gray */
+    color: #212529; /* Dark gray for text */
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #d3ad1537; /* Dark blue */
+    color: rgb(196, 93, 20);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo-img {
+    width: 200px; /* Augmenter la taille du logo */
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin-right: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #3E1F1B;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.navigation a:hover {
+    background-color: #d5c01e; /* Slightly lighter gray */
+}
+
+/* Admin login */
+.admin-login-form {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.admin-login-form input {
+    padding: 12px;
+    margin: 5px;
+    font-size: 16px;
+    width: 220px; /* Réduire la largeur des champs du formulaire d'admin */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.admin-login-form button {
+    padding: 12px 20px;
+    background-color: #d3ad1537; /* Bootstrap blue */
+    color: #3E1F1B;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 240px; /* Réduire la largeur du bouton */
+}
+
+.admin-login-form button:hover {
+    background-color: #d5c01e;
+}
+
+/* Models section */
+.modeles {
+    text-align: center;
+    margin: 40px 20px;
+}
+
+.modeles h2 {
+    font-size: 2.5rem; /* Agrandir le titre */
+    margin-bottom: 30px; /* Espacement plus grand */
+    color: #3E1F1B; /* Marron chocolat foncé */
+    font-family: 'Georgia', serif; /* Police élégante */
+    font-weight: bold; /* Gras */
+    font-style: italic; /* Italique */
+  
+}
+
+/* Models container */
+.modeles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajustez à 200px pour plus de modèles par ligne */
+    gap: 20px;
+    padding: 0 20px;
+    align-items: stretch;
+}
+
+/* Individual model card */
+.modele {
+    background-color: #d3ad1537;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Assurez-vous que les cartes occupent toute la largeur disponible dans la grille */
+    max-width: 250px; /* Limiter la largeur pour que les modèles ne soient pas trop grands */
+    margin: 0 auto; /* Centrer chaque carte de modèle */
+}
+
+.modele img {
+    width: 100%;
+    height: 180px; /* Réduire la hauteur des images */
+    object-fit: cover;
+}
+
+.modele-info {
+    padding: 15px;
+}
+
+.modele-info h3 {
+    font-size: 1.2rem; /* Réduire la taille du titre */
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.modele-description {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.modele-prix {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #28a745; /* Green */
+}
+
+.modele-availability {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.available {
+    color: #28a745;
+}
+
+.out-of-stock {
+    color: #dc3545; /* Red */
+    font-weight: bold;
+}
+
+/* Admin tools */
+.admin-tools {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.admin-tools button {
+    padding: 10px 20px;
+    background-color: #d3ad1537;
+    color:  #3E1F1B;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+.admin-tools button:hover {
+    background-color: #d5c01e;
+}
+
+/* Add model form */
+.add-model-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-model-form input, .add-model-form select {
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 15px;
+    width: 100%; /* Élément de formulaire qui s'ajuste à la largeur disponible */
+    max-width: 220px; /* Limite la largeur pour un meilleur alignement */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-model-form button {
+    padding: 10px 15px;
+    background-color: #d3ad1537;
+    color: #3E1F1B;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 220px; /* Ajuster la largeur */
+}
+
+.add-model-form button:hover {
+    background-color: #d5c01e;
+}
